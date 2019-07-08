@@ -6,6 +6,7 @@ C# scripts of the short animation film "Glitch".
 - [Door Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#door-script)
 - [Eye Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#eye-script)
 - [Sliding Door Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#sliding-door-script)
+- [Lamp Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#lamp-script)
 
 
 ## TODO
@@ -15,7 +16,6 @@ Will add scripts as soon as possible.
 - HangerScript
 - IslanderScript
 - JumperScript
-- LampScript
 - PlayerScript
 - ScreenScript
 ### extras
