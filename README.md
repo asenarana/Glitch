@@ -80,7 +80,6 @@ Changes the material of the eye objects in order to create the illusion of close
 # TODO
 ## main scripts
 - ControllerScript
-- EyeScript
 - HangerScript
 - SlidingDoorScript
 - IslanderScript
