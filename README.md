@@ -7,6 +7,25 @@ C# scripts of the short animation film "Glitch".
 - [Eye Script](https://github.com/asenarana/Glitch#eye-script)
 
 
+## TODO
+### main scripts
+- ControllerScript
+- HangerScript
+- SlidingDoorScript
+- IslanderScript
+- JumperScript
+- LampScript
+- PlayerScript
+- ScreenScript
+### extras
+- CapturerScript
+- CaptureScript
+- MeshCombineEditor
+- MeshCombiner
+- DeathScript
+
+Will add scripts as soon as possible.
+
 ## Blinking Light Script
 ### public void Blink(float time, int count);
 __time:__ waiting time between the light switches in seconds
@@ -75,23 +94,3 @@ Changes the material of the eye objects in order to create the illusion of open 
 
 ### public void CloseEyes();
 Changes the material of the eye objects in order to create the illusion of closed eyes.
-
-
-# TODO
-## main scripts
-- ControllerScript
-- HangerScript
-- SlidingDoorScript
-- IslanderScript
-- JumperScript
-- LampScript
-- PlayerScript
-- ScreenScript
-## extras
-- CapturerScript
-- CaptureScript
-- MeshCombineEditor
-- MeshCombiner
-- DeathScript
-
-Will add scripts as soon as possible.
