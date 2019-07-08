@@ -8,6 +8,7 @@ C# scripts of the short animation film "Glitch".
 
 
 ## TODO
+Will add scripts as soon as possible.
 ### main scripts
 - ControllerScript
 - HangerScript
@@ -24,7 +25,9 @@ C# scripts of the short animation film "Glitch".
 - MeshCombiner
 - DeathScript
 
-Will add scripts as soon as possible.
+### NOTE
+This project was completed in a 10-week duration. Efficiency of the code was not a concern. Due to this, the code provided here can be made more efficient.
+
 
 ## Blinking Light Script
 ### public void Blink(float time, int count);
