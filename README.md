@@ -45,10 +45,8 @@ __rot:__ desired rotation to set to the object
 Sets the rotation of the camera object as euler angles.
 
 # TODO
-- CapturerScript
-- CaptureScript
+## main scripts
 - ControllerScript
-- DeathScript
 - DoorScript
 - EyeScript
 - HangerScript
@@ -56,10 +54,13 @@ Sets the rotation of the camera object as euler angles.
 - IslanderScript
 - JumperScript
 - LampScript
-- MeshCombineEditor
-- MeshCombiner
 - PlayerScript
 - ScreenScript
-...
+## extras
+- CapturerScript
+- CaptureScript
+- MeshCombineEditor
+- MeshCombiner
+- DeathScript
 
 Will add scripts as soon as possible.
