@@ -3,13 +3,13 @@ C# scripts of the short animation film "Glitch".
 
 # BlinkingLightScript
 <b>public void Blink(float time, int count);</b>
-  
-Activates and deactivates the "Light" object, in order to create the illusion of blinking light.
-It calls the SetStatus() function of the ControllerScript when the blinking is done.
 
 time: waiting time between the light switches in seconds
 
 count: amount of switches
+
+Activates and deactivates the "Light" object, in order to create the illusion of blinking light.
+It calls the SetStatus() function of the ControllerScript when the blinking is done.
 
 # TODO
 - CameraScript
