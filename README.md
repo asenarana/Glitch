@@ -1,6 +1,12 @@
 # Glitch
 C# scripts of the short animation film "Glitch".
 
+- [Blinking Light Script](https://github.com/asenarana/Glitch#blinking-light-script)
+- [Camera Script](https://github.com/asenarana/Glitch#camera-script)
+- [Door Script](https://github.com/asenarana/Glitch#door-script)
+- [Eye Script](https://github.com/asenarana/Glitch#eye-script)
+
+
 ## Blinking Light Script
 ### public void Blink(float time, int count);
 __time:__ waiting time between the light switches in seconds
@@ -61,6 +67,15 @@ __count:__ number of frames to perfom rotation
 
 Rotates the door object on the y-axis in negative direction.
 It calls the SetStatus() function of the ControllerScript when the rotation is done.
+
+
+## Eye Script
+### public void OpenEyes();
+Changes the material of the eye objects in order to create the illusion of open eyes.
+
+### public void CloseEyes();
+Changes the material of the eye objects in order to create the illusion of closed eyes.
+
 
 # TODO
 ## main scripts
