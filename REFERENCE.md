@@ -1,4 +1,4 @@
-## Blinking Light Script
+# Blinking Light Script
 ### public void Blink(float time, int count);
 __time:__ waiting time between the light switches in seconds
 
@@ -7,7 +7,7 @@ __count:__ number of switches
 Activates and deactivates the "Light" object.
 It calls the SetStatus() function of the ControllerScript when the blinking is done.
 
-## Camera Script
+# Camera Script
 
 ### public void RotateDown(float amount, int count);
 __amount:__ amount to rotate in each frame given as euler angles
@@ -41,7 +41,7 @@ __rot:__ desired rotation to set to the object
 
 Sets the rotation of the camera object as euler angles.
 
-## Door Script
+# Door Script
 Script must be attached to the pivot object.
 ### public void OpenDoor( float amount, int count);
 __amount:__ amount to rotate in each frame given as euler angles
@@ -60,9 +60,25 @@ Rotates the door object on the y-axis in negative direction.
 It calls the SetStatus() function of the ControllerScript when the rotation is done.
 
 
-## Eye Script
+# Eye Script
 ### public void OpenEyes();
 Changes the material of the eye objects in order to create the illusion of open eyes.
 
 ### public void CloseEyes();
 Changes the material of the eye objects in order to create the illusion of closed eyes.
+
+
+# Sliding Door Script
+### public void Open(float amount, int count);
+__amount:__ amount to move in each frame given as positional difference
+
+__count:__ number of frames to perfom the movement
+
+Moves the door objects on the x-axis in opposing directions away from each other.
+
+### public void Close(float amount, int count);
+__amount:__ amount to move in each frame given as positional difference
+
+__count:__ number of frames to perfom the movement
+
+Moves the door objects on the x-axis in opposing directions towards each other.
