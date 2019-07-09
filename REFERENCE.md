@@ -2,6 +2,7 @@
 
 - [Blinking Light Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#blinking-light-script)
 - [Camera Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#camera-script)
+- [Death Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#death-script)
 - [Door Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#door-script)
 - [Eye Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#eye-script)
 - [Islander Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#islander-script)
@@ -55,6 +56,13 @@ Returns the rotation of the camera object as euler angles.
 __rot:__ desired rotation to set to the object
 
 Sets the rotation of the camera object as euler angles.
+
+# Death Script
+### public void Die();
+Changes the color of the materials of the "mouth", "eyes", "hair" objects slowly. The rate of the lerping can be modified from the code.
+
+### public void SetDead();
+Changes the color of the materials of the "mouth", "eyes", "hair" objects instantly.
 
 # Door Script
 Script must be attached to the pivot object.
