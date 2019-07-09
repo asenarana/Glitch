@@ -14,10 +14,11 @@ C# scripts of the short animation film "Glitch".
 ## TODO
 Will add scripts as soon as possible.
 
-- ControllerScript
-- HangerScript
 - IslanderScript
 - JumperScript
+- HangerScript
+- ControllerScript
+
 ### extras
 - CapturerScript
 - CaptureScript
@@ -26,4 +27,4 @@ Will add scripts as soon as possible.
 - DeathScript
 
 ### NOTE
-This project was completed in a 10-week duration. Quality of the code was not a concern. Due to this, there are a lot of hardcoded stuff. The code provided here can be made more efficient.
+This project was completed in a 10-week duration and the quality of the code was not a concern. Due to this, there are a lot of hardcoded stuff. The code provided here can be made more efficient.
