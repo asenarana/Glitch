@@ -18,12 +18,8 @@ C# scripts of the short animation film "Glitch".
 - [Screen Script](https://github.com/asenarana/Glitch/blob/master/AnimationScripts/ScreenScript.cs)
 - [Sliding Door Script](https://github.com/asenarana/Glitch/blob/master/AnimationScripts/SlidingDoorScript.cs)
 - [Swinger Script](https://github.com/asenarana/Glitch/blob/master/AnimationScripts/SwingerScript.cs)
+- Controller Script
 
 
 ### NOTE
 This project was completed in a 10-week duration and the quality of the code was not a concern. Due to this, there are lots of hardcoded stuff. The code provided here can be improved.
-
-## TODO
-Will add scripts as soon as possible.
-
-- ControllerScript
