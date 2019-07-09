@@ -68,6 +68,14 @@ Changes the material of the eye objects in order to create the illusion of open 
 Changes the material of the eye objects in order to create the illusion of closed eyes.
 
 
+# Lamp Script
+### public void TurnOff();
+Changes the material of the lamp object in order to turn the light off.
+
+### public void TurnOn();
+Changes the material of the lamp object in order to turn the light on.
+
+
 # Sliding Door Script
 ### public void Open(float amount, int count);
 __amount:__ amount to move in each frame given as positional difference
@@ -82,12 +90,4 @@ __amount:__ amount to move in each frame given as positional difference
 __count:__ number of frames to perfom the movement
 
 Moves the door objects on the x-axis in opposing directions towards each other.
-
-
-# Lamp Script
-### public void TurnOff();
-Changes the material of the lamp object in order to turn the light off.
-
-### public void TurnOn();
-Changes the material of the lamp object in order to turn the light on.
 
