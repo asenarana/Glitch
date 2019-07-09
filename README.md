@@ -5,6 +5,7 @@ C# scripts of the short animation film "Glitch".
 
 - [Blinking Light Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#blinking-light-script)
 - [Camera Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#camera-script)
+- [Capture Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#capture-script)
 - [Death Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#death-script)
 - [Door Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#door-script)
 - [Eye Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#eye-script)
@@ -26,6 +27,5 @@ Will add scripts as soon as possible.
 - ControllerScript
 
 ### extras
-- CaptureScript
 - MeshCombineEditor
 - MeshCombiner
