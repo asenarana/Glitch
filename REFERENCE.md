@@ -2,6 +2,7 @@
 
 - [Blinking Light Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#blinking-light-script)
 - [Camera Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#camera-script)
+- [Capture Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#capture-script)
 - [Death Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#death-script)
 - [Door Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#door-script)
 - [Eye Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#eye-script)
@@ -56,6 +57,13 @@ Returns the rotation of the camera object as euler angles.
 __rot:__ desired rotation to set to the object
 
 Sets the rotation of the camera object as euler angles.
+
+
+# Capture Script
+### public void Capture(string name);
+__name:__ desired name of the file to be saved
+Captures and saves the view of the camera object the script is attached to as a PNG file with RGB24 format.
+
 
 # Death Script
 ### public void Die();
