@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HangerScript : MonoBehaviour
+public class SwingerScript : MonoBehaviour
 {
     private Transform swinger;
 
