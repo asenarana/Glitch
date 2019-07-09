@@ -76,6 +76,11 @@ Changes the material of the lamp object in order to turn the light off.
 Changes the material of the lamp object in order to turn the light on.
 
 
+# Screen Script
+### public void ShowFeed();
+Changes the material of the screen object continuously in order to create the illusion of showing a video on the screen.
+It calls the SetStatus() function of the ControllerScript when the pre-set materials are all shown.
+
 # Sliding Door Script
 ### public void Open(float amount, int count);
 __amount:__ amount to move in each frame given as positional difference
