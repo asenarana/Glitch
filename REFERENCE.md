@@ -1,8 +1,8 @@
 # Glitch
 
+### Animation
 - [Blinking Light Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#blinking-light-script)
 - [Camera Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#camera-script)
-- [Capture Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#capture-script)
 - [Death Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#death-script)
 - [Door Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#door-script)
 - [Eye Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#eye-script)
@@ -14,7 +14,12 @@
 - [Sliding Door Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#sliding-door-script)
 - [Swinger Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#swinger-script)
 
+### Model
+- [Capture Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#capture-script)
+- [Mesh Combiner Editor]()
+- [Mesh Combiner Editor]()
 
+#
 # Blinking Light Script
 ### public void Blink(float time, int count);
 __time:__ waiting time between the light switches in seconds
@@ -24,6 +29,7 @@ __count:__ number of switches
 Activates and deactivates the "Light" object.
 It calls the SetStatus() function of the ControllerScript when the action is done.
 
+#
 # Camera Script
 
 ### public void RotateDown(float amount, int count);
@@ -58,14 +64,7 @@ __rot:__ desired rotation to set to the object
 
 Sets the rotation of the camera object as euler angles.
 
-
-# Capture Script
-### public void Capture(string name);
-__name:__ desired name of the file to be saved
-
-Captures and saves the view of the camera object the script is attached to as a PNG file with RGB24 format.
-
-
+#
 # Death Script
 ### public void Die();
 Changes the color of the materials of the "mouth", "eyes", "hair" objects slowly. The rate of the lerping can be modified from the code.
@@ -73,6 +72,7 @@ Changes the color of the materials of the "mouth", "eyes", "hair" objects slowly
 ### public void SetDead();
 Changes the color of the materials of the "mouth", "eyes", "hair" objects instantly.
 
+#
 # Door Script
 Script must be attached to the pivot object.
 ### public void OpenDoor( float amount, int count);
@@ -91,7 +91,7 @@ __count:__ number of frames to perfom the action
 Rotates the door object on the y-axis in negative direction.
 It calls the SetStatus() function of the ControllerScript when the action is done.
 
-
+#
 # Eye Script
 ### public void OpenEyes();
 Changes the material of the eye objects in order to create the illusion of open eyes.
@@ -99,7 +99,7 @@ Changes the material of the eye objects in order to create the illusion of open 
 ### public void CloseEyes();
 Changes the material of the eye objects in order to create the illusion of closed eyes.
 
-
+#
 # Islander Script
 ### public void SetPosition(Vector3 pos);
 __pos:__ desired position to set to the object.
@@ -120,7 +120,7 @@ Returns the rotation of the islander object as euler angles.
 ### public void Sit();
 Triggers the corresponding parameters of the Animator in order to play the animation.
 
-
+#
 # Jumper Script
 ### public void SetPosition(Vector3 pos);
 __pos:__ desired position to set to the object.
@@ -151,7 +151,7 @@ __flail:__  toggles between whether the animation includes flail effect or not
 
 Triggers the corresponding parameters of the Animator in order to play the animation.
 
-
+#
 # Lamp Script
 ### public void TurnOff();
 Changes the material of the lamp object in order to turn the light off.
@@ -159,6 +159,7 @@ Changes the material of the lamp object in order to turn the light off.
 ### public void TurnOn();
 Changes the material of the lamp object in order to turn the light on.
 
+#
 # Player Script
 Player object has two child objects called Avatar and Humanoid. Avatar object is the rigged version of the Humanoid object.
 ### public void SetAvatarVisible();
@@ -451,12 +452,13 @@ Triggers the corresponding parameters of the Animator in order to play the anima
 ### public void StopRunning();
 Triggers the corresponding parameters of the Animator in order to play the animation.
 
-
+#
 # Screen Script
 ### public void ShowFeed();
 Changes the material of the screen object continuously in order to create the illusion of showing a video on the screen.
 It calls the SetStatus() function of the ControllerScript when the pre-set materials are all shown.
 
+#
 # Sliding Door Script
 ### public void Open(float amount, int count);
 __amount:__ amount to move in each frame given as positional difference
@@ -472,6 +474,7 @@ __count:__ number of frames to perfom the action
 
 Moves the door objects on the x-axis in opposing directions towards each other.
 
+#
 # Swinger Script
 ### public void SetSwingAngle(float angle);
 __angle:__ desired angle to start swinging at
@@ -494,3 +497,28 @@ This function can be modified to change the speed of rotation continuously in or
 
 ### public void StopAction();
 Sets the object state to IDLE and calls the SetStatus() function of the ControllerScript.
+
+# 
+# Capture Script
+### public void Capture(string name);
+__name:__ desired name of the file to be saved
+
+Captures and saves the view of the camera object the script is attached to as a PNG file with RGB24 format.
+
+
+#
+# Mesh Combiner
+### public void CombineMeshBasic();
+Combines the meshes of the children objects into one mesh with one material.
+
+### public void CombineMeshAdvanced();
+Combines the meshes of the children objects into submeshes such that each material has a submesh.
+
+### public void SaveMesh();
+Saves the mesh object as an asset and refreshes the Asset Database.
+
+
+#
+# Mesh Combiner Editor
+### public override void OnInspectorGUI();
+Custom editor of Mesh Combiner. It contains a button for each function in Mesh Combiner.
