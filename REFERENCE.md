@@ -416,7 +416,8 @@ __count:__ number of frames to perfom the action
 
 __control:__ if true, starting angle is __totalAngle__; if false, it is __(-1 * totalAngle)__
 
-Rotates the object in x-axis in order to create the illusion of swinging.
+Rotates the object in x-axis in order to create the illusion of swinging. 
+It calls the SetStatus() function of the ControllerScript when the action is done.
 
 This function can be modified to change the speed of rotation continuously in order to create a more smooth and realistic swinging effect.
 
