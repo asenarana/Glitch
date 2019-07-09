@@ -16,8 +16,8 @@
 
 ### Model
 - [Capture Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#capture-script)
-- [Mesh Combiner Editor]()
-- [Mesh Combiner Editor]()
+- [Mesh Combiner](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#mesh-combiner)
+- [Mesh Combiner Editor](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#mesh-combiner-editor)
 
 #
 # Blinking Light Script
