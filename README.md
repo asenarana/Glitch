@@ -7,6 +7,7 @@ C# scripts of the short animation film "Glitch".
 - [Camera Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#camera-script)
 - [Door Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#door-script)
 - [Eye Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#eye-script)
+- [Islander Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#islander-script)
 - [Jumper Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#jumper-script)
 - [Lamp Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#lamp-script)
 - [Player Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#player-script)
@@ -21,7 +22,6 @@ This project was completed in a 10-week duration and the quality of the code was
 ## TODO
 Will add scripts as soon as possible.
 
-- IslanderScript
 - ControllerScript
 
 ### extras
