@@ -4,6 +4,7 @@
 - [Camera Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#camera-script)
 - [Door Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#door-script)
 - [Eye Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#eye-script)
+- [Islander Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#islander-script)
 - [Jumper Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#jumper-script)
 - [Lamp Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#lamp-script)
 - [Player Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#player-script)
@@ -80,6 +81,27 @@ Changes the material of the eye objects in order to create the illusion of open 
 
 ### public void CloseEyes();
 Changes the material of the eye objects in order to create the illusion of closed eyes.
+
+
+# Islander Script
+### public void SetPosition(Vector3 pos);
+__pos:__ desired position to set to the object.
+
+Sets the position of the islander object relative to the world.
+
+### public Vector3 GetPosition();
+Returns the position of the islander object relative to the world.
+
+### public void SetRotation(Vector3 rot);
+__rot:__ desired rotation to set to the object
+
+Sets the rotation of the islander object as euler angles.
+
+### public Vector3 GetRotation();
+Returns the rotation of the islander object as euler angles.
+
+### public void Sit();
+Triggers the corresponding parameters of the Animator in order to play the animation.
 
 
 # Jumper Script
