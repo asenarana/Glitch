@@ -62,6 +62,7 @@ Sets the rotation of the camera object as euler angles.
 # Capture Script
 ### public void Capture(string name);
 __name:__ desired name of the file to be saved
+
 Captures and saves the view of the camera object the script is attached to as a PNG file with RGB24 format.
 
 
