@@ -11,6 +11,9 @@ C# scripts of the short animation film "Glitch".
 - [Sliding Door Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#sliding-door-script)
 
 
+### NOTE
+This project was completed in a 10-week duration and the quality of the code was not a concern. Due to this, there are a lot of hardcoded stuff. The code provided here can be made more efficient.
+
 ## TODO
 Will add scripts as soon as possible.
 
@@ -25,6 +28,3 @@ Will add scripts as soon as possible.
 - MeshCombineEditor
 - MeshCombiner
 - DeathScript
-
-### NOTE
-This project was completed in a 10-week duration and the quality of the code was not a concern. Due to this, there are a lot of hardcoded stuff. The code provided here can be made more efficient.
