@@ -1,6 +1,8 @@
 # Glitch
 C# scripts of the short animation film "Glitch".
 
+[Reference Document](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md)
+
 - [Blinking Light Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#blinking-light-script)
 - [Camera Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#camera-script)
 - [Door Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#door-script)
