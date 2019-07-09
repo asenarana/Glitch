@@ -22,7 +22,6 @@ This project was completed in a 10-week duration and the quality of the code was
 Will add scripts as soon as possible.
 
 - IslanderScript
-- JumperScript
 - ControllerScript
 
 ### extras
