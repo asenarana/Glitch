@@ -13,7 +13,7 @@ C# scripts of the short animation film "Glitch".
 
 ## TODO
 Will add scripts as soon as possible.
-### main scripts
+
 - ControllerScript
 - HangerScript
 - IslanderScript
