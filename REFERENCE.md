@@ -313,28 +313,59 @@ It calls the SetStatus() function of the ControllerScript when the action is don
 
 ## Avatar Functions
 These functions are intended to work when the Avatar object is active only.
-Functions below trigger the corresponding parameters of the Animator in order to play the animations.
 ### public void RunToWalk(float speed);
 __speed:__ amount to slow down in each frame
 
+Triggers the corresponding parameters of the Animator in order to play the animation.
 Additionally, reduces the speed of the animation continuously until the speed is zero. It calls the SetStatus() function of the ControllerScript when the speed is less than or equal to zero.
 
 ### public void StartWalk();
+Triggers the corresponding parameters of the Animator in order to play the animation.
+
 ### public void Walk();
+Triggers the corresponding parameters of the Animator in order to play the animation.
+
 ### public void SadIdle();
+Triggers the corresponding parameters of the Animator in order to play the animation.
+
 ### public void SadLook();
+Triggers the corresponding parameters of the Animator in order to play the animation.
+
 ### public void SadWalk();
+Triggers the corresponding parameters of the Animator in order to play the animation.
+
 ### public void StartSadWalk();
+Triggers the corresponding parameters of the Animator in order to play the animation.
+
 ### public void TurnLeftWalk();
+Triggers the corresponding parameters of the Animator in order to play the animation.
+
 ### public void TurnRightWalk();
+Triggers the corresponding parameters of the Animator in order to play the animation.
+
 ### public void StopTurn();
+Triggers the corresponding parameters of the Animator in order to play the animation.
+
 ### public void StopWalking();
+Triggers the corresponding parameters of the Animator in order to play the animation.
+
 ### public void LookAround();
+Triggers the corresponding parameters of the Animator in order to play the animation.
+
 ### public void LookUpwards();
+Triggers the corresponding parameters of the Animator in order to play the animation.
+
 ### public void Run();
+Triggers the corresponding parameters of the Animator in order to play the animation.
+
 ### public void StartRunning();
+Triggers the corresponding parameters of the Animator in order to play the animation.
+
 ### public void RunAway();
+Triggers the corresponding parameters of the Animator in order to play the animation.
+
 ### public void StopRunning();
+Triggers the corresponding parameters of the Animator in order to play the animation.
 
 
 # Screen Script
