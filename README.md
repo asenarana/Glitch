@@ -26,4 +26,4 @@ Will add scripts as soon as possible.
 - DeathScript
 
 ### NOTE
-This project was completed in a 10-week duration. Efficiency of the code was not a concern. Due to this, the code provided here can be made more efficient.
+This project was completed in a 10-week duration. Quality of the code was not a concern. Due to this, there are a lot of hardcoded stuff. The code provided here can be made more efficient.
