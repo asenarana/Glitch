@@ -4,6 +4,7 @@
 - [Camera Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#camera-script)
 - [Door Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#door-script)
 - [Eye Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#eye-script)
+- [Jumper Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#jumper-script)
 - [Lamp Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#lamp-script)
 - [Player Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#player-script)
 - [Screen Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#screen-script)
@@ -79,6 +80,37 @@ Changes the material of the eye objects in order to create the illusion of open 
 
 ### public void CloseEyes();
 Changes the material of the eye objects in order to create the illusion of closed eyes.
+
+
+# Jumper Script
+### public void SetPosition(Vector3 pos);
+__pos:__ desired position to set to the object.
+
+Sets the position of the jumper object relative to the world.
+
+### public Vector3 GetPosition();
+Returns the position of the jumper object relative to the world.
+
+### public void SetRotation(Vector3 rot);
+__rot:__ desired rotation to set to the object
+
+Sets the rotation of the jumper object as euler angles.
+
+### public Vector3 GetRotation();
+Returns the rotation of the jumper object as euler angles.
+
+### public void Fall(float distance, int count);
+__distance:__ amount of distance to move the object on the y-axis in each frame
+
+__count:__ number of frames to perfom the action
+
+Triggers the corresponding parameters of the Animator in order to play the animation. It also moves the object on the y-axis in negative direction.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+### public void Impact(bool flail)
+__flail:__  toggles between whether the animation includes flail effect or not
+
+Triggers the corresponding parameters of the Animator in order to play the animation.
 
 
 # Lamp Script
