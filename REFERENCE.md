@@ -1,3 +1,15 @@
+# Glitch
+
+- [Blinking Light Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#blinking-light-script)
+- [Camera Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#camera-script)
+- [Door Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#door-script)
+- [Eye Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#eye-script)
+- [Lamp Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#lamp-script)
+- [Player Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#player-script)
+- [Screen Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#screen-script)
+- [Sliding Door Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#sliding-door-script)
+
+
 # Blinking Light Script
 ### public void Blink(float time, int count);
 __time:__ waiting time between the light switches in seconds
