@@ -17,7 +17,7 @@ C# scripts of the short animation film "Glitch".
 
 
 ### NOTE
-This project was completed in a 10-week duration and the quality of the code was not a concern. Due to this, there are lots of hardcoded stuff. The code provided here can be made more efficient.
+This project was completed in a 10-week duration and the quality of the code was not a concern. Due to this, there are lots of hardcoded stuff. The code provided here can be improved.
 
 ## TODO
 Will add scripts as soon as possible.
