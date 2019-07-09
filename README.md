@@ -3,19 +3,22 @@ C# scripts of the short animation film "Glitch".
 
 [Reference Document](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md)
 
-- [Blinking Light Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#blinking-light-script)
-- [Camera Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#camera-script)
-- [Capture Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#capture-script)
-- [Death Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#death-script)
-- [Door Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#door-script)
-- [Eye Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#eye-script)
-- [Islander Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#islander-script)
-- [Jumper Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#jumper-script)
-- [Lamp Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#lamp-script)
-- [Player Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#player-script)
-- [Screen Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#screen-script)
-- [Sliding Door Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#sliding-door-script)
-- [Swinger Script](https://github.com/asenarana/Glitch/blob/master/REFERENCE.md#swinger-script)
+[Scripts](https://github.com/asenarana/Glitch)
+- [Blinking Light Script](https://github.com/asenarana/Glitch/blob/master/BlinkingLightScript.cs)
+- [Camera Script](https://github.com/asenarana/Glitch/blob/master/CameraScript.cs)
+- [Capture Script](https://github.com/asenarana/Glitch/blob/master/CaptureScript.cs)
+- [Death Script](https://github.com/asenarana/Glitch/blob/master/DeathScript.cs)
+- [Door Script](https://github.com/asenarana/Glitch/blob/master/DoorScript.cs)
+- [Eye Script](https://github.com/asenarana/Glitch/blob/master/EyeScript.cs)
+- [Islander Script](https://github.com/asenarana/Glitch/blob/master/IslanderScript.cs)
+- [Jumper Script](https://github.com/asenarana/Glitch/blob/master/JumperScript.cs)
+- [Lamp Script](https://github.com/asenarana/Glitch/blob/master/LampScript.cs)
+- [Mesh Combiner]()
+- [Mesh Combiner Editor]()
+- [Player Script](https://github.com/asenarana/Glitch/blob/master/PlayerScript.cs)
+- [Screen Script](https://github.com/asenarana/Glitch/blob/master/ScreenScript.cs)
+- [Sliding Door Script](https://github.com/asenarana/Glitch/blob/master/SlidingDoorScript.cs)
+- [Swinger Script](https://github.com/asenarana/Glitch/blob/master/SwingerScript.cs)
 
 
 ### NOTE
@@ -25,7 +28,3 @@ This project was completed in a 10-week duration and the quality of the code was
 Will add scripts as soon as possible.
 
 - ControllerScript
-
-### extras
-- MeshCombineEditor
-- MeshCombiner
