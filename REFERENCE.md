@@ -5,25 +5,25 @@ __time:__ waiting time between the light switches in seconds
 __count:__ number of switches
 
 Activates and deactivates the "Light" object.
-It calls the SetStatus() function of the ControllerScript when the blinking is done.
+It calls the SetStatus() function of the ControllerScript when the action is done.
 
 # Camera Script
 
 ### public void RotateDown(float amount, int count);
 __amount:__ amount to rotate in each frame given as euler angles
 
-__count:__ number of frames to perfom rotation
+__count:__ number of frames to perfom the action
 
 Rotates the camera downwards.
-It calls the SetStatus() function of the ControllerScript when the rotation is done.
+It calls the SetStatus() function of the ControllerScript when the action is done.
 
 ### public void RotateLeft(float amount, int count);
 __amount:__ amount to rotate in each frame given as euler angles
 
-__count:__ number of frames to perfom rotation
+__count:__ number of frames to perfom the action
 
 Rotates the camera to left.
-It calls the SetStatus() function of the ControllerScript when the rotation is done.
+It calls the SetStatus() function of the ControllerScript when the action is done.
 
 ### public Vector3 GetPosition();
 Returns the position of the camera object relative to the world.
@@ -46,18 +46,18 @@ Script must be attached to the pivot object.
 ### public void OpenDoor( float amount, int count);
 __amount:__ amount to rotate in each frame given as euler angles
 
-__count:__ number of frames to perfom rotation
+__count:__ number of frames to perfom the action
 
 Rotates the door object on the y-axis in positive direction.
-It calls the SetStatus() function of the ControllerScript when the rotation is done.
+It calls the SetStatus() function of the ControllerScript when the action is done.
 
 ### public void CloseDoor(float amount, int count);
 __amount:__ amount to rotate in each frame given as euler angles
 
-__count:__ number of frames to perfom rotation
+__count:__ number of frames to perfom the action
 
 Rotates the door object on the y-axis in negative direction.
-It calls the SetStatus() function of the ControllerScript when the rotation is done.
+It calls the SetStatus() function of the ControllerScript when the action is done.
 
 
 # Eye Script
@@ -75,6 +75,267 @@ Changes the material of the lamp object in order to turn the light off.
 ### public void TurnOn();
 Changes the material of the lamp object in order to turn the light on.
 
+# Player Script
+Player object has two child objects called Avatar and Humanoid. Avatar object is the rigged version of the Humanoid object.
+### public void SetAvatarVisible();
+Activates the Avatar object and deactivates the Humanoid object.
+
+### public void SetHumanoidVisible();
+Activates the Humanoid object and deactivates the Avatar object.
+
+### public void SetPosition(Vector3 pos);
+__pos:__ desired position to set to the object.
+
+Sets the position of the player object relative to the world.
+
+### public Vector3 GetPosition();
+Returns the position of the player object relative to the world.
+
+### public void SetRotation(Vector3 rot);
+__rot:__ desired rotation to set to the object
+
+Sets the rotation of the player object as euler angles.
+
+### public Vector3 GetRotation();
+Returns the rotation of the player object as euler angles.
+
+### public void TurnAt(Vector3 pos);
+__pos:__ desired position to face the object
+
+Rotates the player object to look at the given position.
+
+### public void Wait(float time);
+__time:__ amount to wait in seconds
+
+Waits for the given time and calls the SetStatus() function of the ControllerScript.
+
+### public void MoveForward(float amount, int count);
+__amount:__ amount to move in each frame given as positional difference
+
+__count:__ number of frames to perfom the action
+
+Moves the object in the forward direction relative to the object itself.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+### public void TurnLeft(float amount, int count);
+__amount:__ amount to rotate in each frame given as euler angles
+
+__count:__ number of frames to perfom the action
+
+Rotates the object to the left.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+### public void TurnRight(float amount, int count);
+__amount:__ amount to rotate in each frame given as euler angles
+
+__count:__ number of frames to perfom the action
+
+Rotates the object to the right.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+
+## Humanoid Functions
+These functions are intended to work when the Humanoid object is active only.
+### public void StopAction();
+Sets the object state to IDLE and calls the SetStatus() function of the ControllerScript.
+
+### public void SetHeadRotation( Vector3 rot);
+__rot:__ desired rotation to set to the head pivot object.
+
+Sets the rotation of the head object as euler angles.
+
+### public void SetEyeScale(Vector3 scl);
+
+__scl:__ desired scale to set to the eyes object
+
+Sets the scale of the eyes object.
+
+### public void LookRightUp(float horizontalAmount, float verticalAmount, int count);
+__horizontalAmount:__ amount to rotate the head object on the y-axis in each frame given as euler angles
+
+__verticalAmount:__ amount to rotate the head object on the x-axis in each frame given as euler angles
+
+__count:__ number of frames to perfom the action
+
+Rotates the head object on x-axis in negative direction and on y-axis in positive direction.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+### public void LookLeftUp(float horizontalAmount, float verticalAmount, int count);
+__horizontalAmount:__ amount to rotate the head object on the y-axis in each frame given as euler angles
+
+__verticalAmount:__ amount to rotate the head object on the x-axis in each frame given as euler angles
+
+__count:__ number of frames to perfom the action
+
+Rotates the head object on x-axis in negative direction and on y-axis in negative direction.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+### public void LookRightDown(float horizontalAmount, float verticalAmount, int count);
+__horizontalAmount:__ amount to rotate the head object on the y-axis in each frame given as euler angles
+
+__verticalAmount:__ amount to rotate the head object on the x-axis in each frame given as euler angles
+
+__count:__ number of frames to perfom the action
+
+Rotates the head object on x-axis in positive direction and on y-axis in positive direction.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+### public void LookLeftDown(float horizontalAmount, float verticalAmount, int count);
+__horizontalAmount:__ amount to rotate the head object on the y-axis in each frame given as euler angles
+
+__verticalAmount:__ amount to rotate the head object on the x-axis in each frame given as euler angles
+
+__count:__ number of frames to perfom the action
+
+Rotates the head object on x-axis in positive direction and on y-axis in negative direction.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+### public void LookUp(float verticalAmount, int count);
+__verticalAmount:__ amount to rotate the head object on the x-axis in each frame given as euler angles
+
+__count:__ number of frames to perfom the action
+
+Rotates the head object on x-axis in negative direction.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+### public void LookDown(float verticalAmount, int count);
+__verticalAmount:__ amount to rotate the head object on the x-axis in each frame given as euler angles
+
+__count:__ number of frames to perfom the action
+
+Rotates the head object on x-axis in positive direction.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+### public void LookLeftUpWalk(float horizontalAmount, float verticalAmount, float walkAmount, int count);
+__horizontalAmount:__ amount to rotate the head object on the y-axis in each frame given as euler angles
+
+__verticalAmount:__ amount to rotate the head object on the x-axis in each frame given as euler angles
+
+__walkAmount:__ amount to move the player object in each frame given as positional difference
+
+__count:__ number of frames to perfom the action
+
+Rotates the head object on x-axis in negative direction and on y-axis in negative direction, while moving the player object in the forward direction relative to the object itself.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+### public void LookRightUpWalk(float horizontalAmount, float verticalAmount, float walkAmount, int count);
+__horizontalAmount:__ amount to rotate the head object on the y-axis in each frame given as euler angles
+
+__verticalAmount:__ amount to rotate the head object on the x-axis in each frame given as euler angles
+
+__walkAmount:__ amount to move the player object in each frame given as positional difference
+
+__count:__ number of frames to perfom the action
+
+Rotates the head object on x-axis in negative direction and on y-axis in positive direction, while moving the player object in the forward direction relative to the object itself.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+### public void LookLeftDownWalk(float horizontalAmount, float verticalAmount, float walkAmount, int count);
+__horizontalAmount:__ amount to rotate the head object on the y-axis in each frame given as euler angles
+
+__verticalAmount:__ amount to rotate the head object on the x-axis in each frame given as euler angles
+
+__walkAmount:__ amount to move the player object in each frame given as positional difference
+
+__count:__ number of frames to perfom the action
+
+Rotates the head object on x-axis in positive direction and on y-axis in negative direction, while moving the player object in the forward direction relative to the object itself.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+### public void LookRightDownWalk(float horizontalAmount, float verticalAmount, float walkAmount, int count);
+__horizontalAmount:__ amount to rotate the head object on the y-axis in each frame given as euler angles
+
+__verticalAmount:__ amount to rotate the head object on the x-axis in each frame given as euler angles
+
+__walkAmount:__ amount to move the player object in each frame given as positional difference
+
+__count:__ number of frames to perfom the action
+
+Rotates the head object on x-axis in positive direction and on y-axis in positive direction, while moving the player object in the forward direction relative to the object itself.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+### public void LookLeftWalk(float horizontalAmount, float walkAmount, int count);
+__horizontalAmount:__ amount to rotate the head object on the y-axis in each frame given as euler angles
+
+__walkAmount:__ amount to move the player object in each frame given as positional difference
+
+__count:__ number of frames to perfom the action
+
+Rotates the head object on y-axis in negative direction, while moving the player object in the forward direction relative to the object itself.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+### public void LookRightWalk(float horizontalAmount, float walkAmount, int count);
+__horizontalAmount:__ amount to rotate the head object on the y-axis in each frame given as euler angles
+
+__walkAmount:__ amount to move the player object in each frame given as positional difference
+
+__count:__ number of frames to perfom the action
+
+Rotates the head object on y-axis in positive direction, while moving the player object in the forward direction relative to the object itself.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+### public void LookUpWalk(float verticalAmount, float walkAmount, int count);
+__verticalAmount:__ amount to rotate the head object on the x-axis in each frame given as euler angles
+
+__walkAmount:__ amount to move the player object in each frame given as positional difference
+
+__count:__ number of frames to perfom the action
+
+Rotates the head object on x-axis in negative direction, while moving the player object in the forward direction relative to the object itself.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+### public void LookDownWalk(float verticalAmount, float walkAmount, int count);
+__verticalAmount:__ amount to rotate the head object on the x-axis in each frame given as euler angles
+
+__walkAmount:__ amount to move the player object in each frame given as positional difference
+
+__count:__ number of frames to perfom the action
+
+Rotates the head object on x-axis in positive direction, while moving the player object in the forward direction relative to the object itself.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+### public void ShrinkEyes(float amount, int count);
+__amount:__ amount to scale down the eyes object
+
+__count:__ number of frames to perfom the action
+
+Decreases the scale of the eyes object on y-axis.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+### public void GrowEyes(float amount, int count);
+__amount:__ amount to scale up the eyes object
+
+__count:__ number of frames to perfom the action
+
+Increases the scale of the eyes object on y-axis.
+It calls the SetStatus() function of the ControllerScript when the action is done.
+
+
+## Avatar Functions
+These functions are intended to work when the Avatar object is active only.
+Functions below trigger the corresponding parameters of the Animator in order to play the animations.
+### public void RunToWalk(float speed);
+__speed:__ amount to slow down in each frame
+
+Additionally, reduces the speed of the animation continuously until the speed is zero. It calls the SetStatus() function of the ControllerScript when the speed is less than or equal to zero.
+
+### public void StartWalk();
+### public void Walk();
+### public void SadIdle();
+### public void SadLook();
+### public void SadWalk();
+### public void StartSadWalk();
+### public void TurnLeftWalk();
+### public void TurnRightWalk();
+### public void StopTurn();
+### public void StopWalking();
+### public void LookAround();
+### public void LookUpwards();
+### public void Run();
+### public void StartRunning();
+### public void RunAway();
+### public void StopRunning();
+
 
 # Screen Script
 ### public void ShowFeed();
@@ -85,14 +346,14 @@ It calls the SetStatus() function of the ControllerScript when the pre-set mater
 ### public void Open(float amount, int count);
 __amount:__ amount to move in each frame given as positional difference
 
-__count:__ number of frames to perfom the movement
+__count:__ number of frames to perfom the action
 
 Moves the door objects on the x-axis in opposing directions away from each other.
 
 ### public void Close(float amount, int count);
 __amount:__ amount to move in each frame given as positional difference
 
-__count:__ number of frames to perfom the movement
+__count:__ number of frames to perfom the action
 
 Moves the door objects on the x-axis in opposing directions towards each other.
 
