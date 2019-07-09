@@ -26,7 +26,6 @@ Will add scripts as soon as possible.
 - ControllerScript
 
 ### extras
-- CapturerScript
 - CaptureScript
 - MeshCombineEditor
 - MeshCombiner
