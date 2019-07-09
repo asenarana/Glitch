@@ -400,3 +400,24 @@ __count:__ number of frames to perfom the action
 
 Moves the door objects on the x-axis in opposing directions towards each other.
 
+# Swinger Script
+### public void SetSwingAngle(float angle);
+__angle:__ desired angle to start swinging at
+
+Sets the initial angle to start swinging.
+
+### public void Swing(float totalAngle, float rate, int count, bool control);
+__totalAngle:__ the angle which the direction of swinging changes
+
+__rate:__ amount of angle to rotate in each frame given as euler angles
+
+__count:__ number of frames to perfom the action
+
+__control:__ if true, starting angle is __totalAngle__; if false, it is __(-1 * totalAngle)__
+
+Rotates the object in x-axis in order to create the illusion of swinging.
+
+This function can be modified to change the speed of rotation continuously in order to create a more smooth and realistic swinging effect.
+
+### public void StopAction();
+Sets the object state to IDLE and calls the SetStatus() function of the ControllerScript.
